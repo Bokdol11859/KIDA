@@ -13,6 +13,8 @@ export interface Diary {
   diary_type: "activity" | "answer";
 }
 
+export interface Question {}
+
 export type ActivityTypes =
   | "공원탐방"
   | "교육체험"
@@ -30,8 +32,18 @@ export interface CardType {
   location: string;
   liked?: boolean;
   target: string;
-  activityType: ActivityTypes;
+  activityType: string;
   type?: "list" | "wishlist" | "history";
   like?: ("child" | "parent")[];
   diaryId?: string;
+  startDate: string;
+  endDate: string;
+  reservationStartDate: string;
+  reservationEndDate: string;
+}
+
+export interface UserType {
+  user_id: number;
+  user_type: "child" | "parent";
+  detailed_type: string;
 }

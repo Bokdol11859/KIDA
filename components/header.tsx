@@ -75,7 +75,8 @@ const Main = styled.header`
   left: 0;
   right: 0;
   padding: 1rem;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
+  background-color: white;
   display: flex;
   align-items: center;
   color: ${THEME.black900};
