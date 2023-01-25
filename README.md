@@ -2,16 +2,35 @@
 
 ![Frame 11](https://user-images.githubusercontent.com/52532871/185774781-4ae1bcd1-80d5-4349-8d71-298fbb66e9c7.png)
 
+<div width="100%" style=" display: flex; gap: 10px; align-items: center; justify-content: center">
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+    <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/> 
+<div/>
+
 ## 목차
 
 - [서비스 소개](#서비스-소개)
+- [활용 기술](#활용-기술)
 - [상세 페이지](#상세-페이지)
+
+
 
 ## 서비스 소개
 
 키즈 다이어리 키다는 갈수록 늘어나는 맞벌이 가정과 아이들의 사교육 수행 시간 확대로 인해 부모와 아이의 단절된 소통을 중점으로 해결하고자 하는 서비스입니다.
 부모와 아이는 키다를 통해 정해진 주제에 따른 일기를 서로 공유하고 아이의 경우 당시의 감정을 선택할 수 있습니다.
 또한 실제 서울특별시에서 진행 중인 문화행사 정보들을 조회하고 함께 가고 싶은 장소를 저장하고 공유해 손쉽게 함께 참여할 수 있는 활동에 접근하고 참여할 수 있게 돕습니다.
+
+## 활용 기술
+  
+- **[Typescript]()**: 자바스크립트의 문법에 타입 지정을 할 수 있도록 만들어진 언어로, 자바스크립트의 자유도와 타입 언어의 안정성까지 갖춘 언어입니다. 해커톤이라는 짧은 시간동안 최대한 오류를 방지하여 완성도를 높히고, 타입스크립트를 통한 타입 추론의 도움을 받기 위해 사용했습니다.  
+  
+- **[NextJS]()**: ReactJS를 더욱 간편하게 사용하기 위해 만들어진 프레임워크로, 추가적인 설정 없이도 기본적으로 ServerSideRendering이 가능한 것이 장점입니다. 또한, 외부 라이브러리의 도움 없이도 자동으로 파일 구조 기반 라우팅이 가능하여 직관적인 폴더 구조를 구축할 수 있습니다. 일기 페이지같은 경우 데이터의 변경이 잦지 않기 때문에 SSG/ISR을 추후에 적용하고자 NextJS를 도입하게 되었습니다. 
+  
+- **[Styled-Component]()**: CSS 파일 없이 자바스크립트 안에서 CSS 작업을 하기 위한 라이브러리로, 서비스 스타일링의 대부분을 Styled-Component를 통해서 작업했습니다. Props 전달이 가능하기 때문에 상태에 따른 스타일링을 더욱 간편하게 처리할 수 있습니다.
+  
+- **[Axios]()**: 백엔드와 통신을 하기 위한 HTTP 클라이언트 라이브러리로, 자바스크립트 내장 라이브러리인 fetch 함수엔 없는 인터셉터와 더욱 간편한 에러 캐치를 위해 사용했습니다.
 
 
 ## 상세 페이지
@@ -36,8 +55,11 @@
 
 | 활동 목록                                                    | 활동 필터                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](https://user-images.githubusercontent.com/52532871/185774946-7d880d30-c2a2-4064-a9db-35a079d9389a.png) | ![description](https://connecthon-image-s3.s3.ap-northeast-2.amazonaws.com/433a6ab0-20fd-11ed-b942-450c904d646c) |
+| ![](https://user-images.githubusercontent.com/52532871/185774946-7d880d30-c2a2-4064-a9db-35a079d9389a.png) | ![활동](https://user-images.githubusercontent.com/80627536/214485309-e750db90-ffd1-4712-90f6-ffe9287d52e4.png)|
 | 활동 목록의 경우 서울시에서 제공하는 공공데이터 API를 활용해 공공기관 등에서 진행 중인 체험 활동 데이터를 목록화하여 보여줍니다. | 더욱이 활동 페이지에서 여러 조건을 기준으로 필터링을 가능하게 하여 사용자가 좀 더 쉽게 본인이 원하는 활동 정보를 찾을 수 있게 하였습니다. |
+
+
+
 
 ### 마이홈
 
@@ -45,6 +67,6 @@
 
 | 함께해요                                                     | 함께했어요                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![description](https://connecthon-image-s3.s3.ap-northeast-2.amazonaws.com/6378f6c0-20fd-11ed-b942-450c904d646c) | ![description](https://connecthon-image-s3.s3.ap-northeast-2.amazonaws.com/6b44f750-20fd-11ed-b942-450c904d646c) |
+| ![마이홈](https://user-images.githubusercontent.com/80627536/214485421-7368e215-7f12-4f9a-aa9b-1e2e9e395548.png) | ![마이홈 (1)](https://user-images.githubusercontent.com/80627536/214485487-01aaa2a0-c096-444c-89d7-50e9dd888acf.png) |
 | 함께해요 탭의 경우 이전 활동 페이지에서 부모와 아이가 찜한 활동을 볼 수 있습니다. | 함께했어요 탭의 경우 활동 중 직접 참여한 활동에 대해 일기를 작성하고 이를 아카이빙할 수 있는 탭입니다. |
 
